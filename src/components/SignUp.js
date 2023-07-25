@@ -30,7 +30,7 @@ const SignUp = () => {
 
 
         console.warn(name, email, password);
-        let result = await fetch("http://localhost:5000/register", {
+        let result = await fetch("https://backend-mongodb-nu.vercel.app/register", {
             method: 'post',
             body: JSON.stringify({ name, email, password }),
             headers: {

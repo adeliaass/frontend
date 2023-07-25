@@ -33,7 +33,7 @@ const Login = () => {
       return;
     }
 
-        let result = await fetch("http://localhost:5000/login", {
+        let result = await fetch("https://backend-mongodb-nu.vercel.app/login", {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {
